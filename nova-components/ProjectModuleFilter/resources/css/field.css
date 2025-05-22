@@ -1,0 +1,56 @@
+.module-element-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 10px 8px;
+    border-radius: 0.25rem;
+    border: 1px solid #ffffff21;
+    background-color: #000;
+}
+
+.module-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px 4px;
+    border-radius: 10px;
+    border: 1px solid #ffffff21;
+    background-color: #121212 !important;
+    cursor: move;
+    overflow: hidden;
+    user-select: none;
+}
+
+.module-element:last-child {
+    margin-bottom: 0;
+}
+
+.module-element .module-name {
+    margin-right: 15px;
+    max-width: 150px;
+    font-size: 13px;
+    text-transform: capitalize;
+    text-wrap: nowrap;
+    cursor: pointer;
+    transition: color 0.2s;
+    overflow: hidden;
+    color: rgb(148 163 184 / 48%);
+}
+
+.module-element .module-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background-color: #475f7461;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.module-element.active .module-name {
+    color: inherit;
+}
+
+.module-element.active .module-status {
+    background-color: #f00 !important;
+}

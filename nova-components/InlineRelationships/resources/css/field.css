@@ -1,0 +1,25 @@
+/* Inline Relationships Scrollbar */
+.search-input-field div::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    /* border-radius: 20px; */
+}
+.search-input-field div::-webkit-scrollbar-track {
+    background: transparent;
+    /* border-radius: 10px; */
+}
+.search-input-field div::-webkit-scrollbar-thumb {
+    background: #f00;
+}
+.search-input-field div::-webkit-scrollbar-thumb:hover {
+    background: #f00;
+}
+
+html body div:is([dusk*="content-blocks-search-input-result-"]) {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+html body div:is(.dark [dusk*="content-blocks-search-input-result-"]:hover) {
+    background-color: #f00 !important;
+    color: #fff !important;
+}

@@ -1,0 +1,17 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "build-project-module-editor": "cd nova-components/ProjectModuleEditor && npm run dev",
+        "build-project-module-editor-prod": "cd nova-components/ProjectModuleEditor && npm run prod",
+        "build-project-module-filter": "cd nova-components/ProjectModuleFilter && npm run dev",
+        "build-project-module-filter-prod": "cd nova-components/ProjectModuleFilter && npm run prod"
+    },
+    "devDependencies": {
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.7.5",
+        "vite": "^4.0.0"
+    }
+}

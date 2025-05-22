@@ -1,0 +1,19 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        DB::unprepared('ALTER TABLE `content_block_department` DROP PRIMARY KEY, ADD PRIMARY KEY (`department_id`,  `content_block_id`, `sort_order`)');
+    }
+
+    public function down()
+    {
+        DB::unprepared('ALTER TABLE `content_block_department` DROP PRIMARY KEY, ADD PRIMARY KEY (`department_id`,  `content_block_id`)');
+    }
+};
